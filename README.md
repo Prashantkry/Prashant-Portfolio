@@ -2,3 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 Deployed Link -  https://resonant-starburst-53f928.netlify.app/
+
+```
+• Technology Used: Next Js | Framer Motion |Javascript | Tailwind CSS | HTML
+• It have option like Home Page About Page and Project
+• Code is written in Next Js & Functioning are made using JavaScript
+• Designing is done with Tailwind CSS
+• Contains All details of Prashant Kumar and All projects
+```
