@@ -42,7 +42,7 @@ export default function Home() {
               </p>
               {/* for button */}
               <div className='mt-2 items-center self-start flex lg:self-center'>
-                <Link href="/dummy.pdf" target={"_blank"}
+                <Link href="/Prashant.pdf" target={"_blank"}
                   className='items-center bg-dark text-light rounded-lg 
                       p-2.5 px-6 flex text-lg font-semibold hover:bg-light
                       hover:text-dark border-2 border-solid border-transparent 
