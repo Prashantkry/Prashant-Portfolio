@@ -11,6 +11,7 @@ import BookSto from "../images/booksto.png";
 import Youtube from '../images/youtube.png'
 import Job from '../images/job.png'
 import Cal from '../images/cal.png'
+import Dic from '../images/dic.png'
 import Portfolio from '../images/pic1.png'
 
 // Feature Components configuration
@@ -207,6 +208,15 @@ const Projects = () => {
               />
             </div>
 
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Dictionary"
+                img={Dic}
+                link="https://darling-profiterole-d4a387.netlify.app/"
+                github="https://github.com/Prashantkry/Dictionary"
+                type="Feature Project"
+              />
+            </div>
 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
