@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import { LinkedInIcon, GithubIcon, SunIcon, MoonIcon } from './icons'
+import LeetCode, { LinkedInIcon, GithubIcon, SunIcon, MoonIcon } from './icons'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
@@ -82,6 +82,10 @@ const Navbar = () => {
                         whileHover={{ y: -2 }}
                         className='w-6 mx-3 dark:text-light'
                     ><GithubIcon /></motion.a>
+                    <motion.a href="https://leetcode.com/Prashantkry89/" target='_blank'
+                        whileHover={{ y: -2 }}
+                        className='w-6 mx-3 dark:text-light'
+                    ><LeetCode /></motion.a>
 
                     {/* 🍃 dark mode button */}
                     <button
