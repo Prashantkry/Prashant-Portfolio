@@ -12,7 +12,7 @@ const ParticlesBackground = () => {
 
   return (
     <Particles
-      className=" w-full h-full absolute translate-z-0"
+      className="h-full absolute translate-z-0"
       id="tsparticles"
       init={particleInit}
       loaded={particleLoaded}
