@@ -11,8 +11,8 @@ import BookSto from "../images/booksto.png";
 import Youtube from '../images/youtube.png'
 import Job from '../images/job.png'
 import Cal from '../images/cal.png'
-import Dic from '../images/dic.png'
 import Portfolio from '../images/pic1.png'
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 // Feature Components configuration
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
@@ -132,7 +132,8 @@ const Projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full mb-16 ">
-        <Layout className="pt-16">
+      <Layout className="pt-16">
+        <ParticlesBackground/>
           <AnimatedText
             text="Imagination Trumps Knowledge!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
@@ -151,7 +152,7 @@ const Projects = () => {
                         • Admin will have rights to add product, category user also remove it
                         • Book can be added in cart make payment We can see similar Books details
                 `}
-                link="https://drab-lime-quail-robe.cyclic.app/"
+                link="https://github.com/Prashantkry/BookSto"
                 github="https://github.com/Prashantkry/BookSto"
                 type="Feature Project"
               />
@@ -208,15 +209,6 @@ const Projects = () => {
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Dictionary"
-                img={Dic}
-                link="https://darling-profiterole-d4a387.netlify.app/"
-                github="https://github.com/Prashantkry/Dictionary"
-                type="Feature Project"
-              />
-            </div>
 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
