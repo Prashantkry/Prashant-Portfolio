@@ -81,11 +81,11 @@ const About = () => {
                         {/* skills counts and nos */}
                         <div className='flex flex-col items-end justify-between col-span-2 xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNos value={50} />+</span>
+                                <span className='inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNos value={2} />+</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>
                             </div>
                             <div className='flex flex-col items-end justify-center'>
-                                <span className='inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNos value={40} />+</span>
+                                <span className='inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl'><AnimatedNos value={10} />+</span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
                             </div>
                             <div className='flex flex-col items-end justify-center'>
