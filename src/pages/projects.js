@@ -10,6 +10,7 @@ import classy from "../images/classy-curve.png";
 import BookSto from "../images/booksto.png";
 import Youtube from '../images/youtube.png'
 import Job from '../images/job.png'
+import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
 import Portfolio from '../images/pic1.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
