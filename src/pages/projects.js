@@ -170,10 +170,10 @@ const Projects = () => {
             
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
-                title="Job Finder"
-                img={Job}
-                link="https://github.com/Prashantkry/Job-Finder"
-                github="https://github.com/Prashantkry/Job-Finder"
+                title="Co-Job Compiler"
+                img={compiler}
+                link="https://whimsical-shortbread-959bb4.netlify.app/"
+                github="https://github.com/Prashantkry/Co-Job-Compiler"
                 type="Feature Project"
               />
             </div>
@@ -209,7 +209,17 @@ const Projects = () => {
               />
             </div>
 
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Job Finder"
+                img={Job}
+                link="https://github.com/Prashantkry/Job-Finder"
+                github="https://github.com/Prashantkry/Job-Finder"
+                type="Feature Project"
+              />
+            </div>
 
+                  
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Calculator"
