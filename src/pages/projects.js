@@ -12,6 +12,7 @@ import Youtube from '../images/youtube.png'
 import Job from '../images/job.png'
 import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
+import Dictionary from '../images/Dictionary.png'
 import Portfolio from '../images/pic1.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
 
@@ -206,6 +207,16 @@ const Projects = () => {
                 img={classy}
                 link="https://prashantkry.github.io/Classy-Curve/"
                 github="https://github.com/Prashantkry/Classy-Curve"
+                type="Feature Project"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Dictionary"
+                img={Dictionary}
+                link="https://darling-profiterole-d4a387.netlify.app/"
+                github="https://github.com/Prashantkry/Dictionary"
                 type="Feature Project"
               />
             </div>
