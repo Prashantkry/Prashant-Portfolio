@@ -36,9 +36,9 @@ export default function Home() {
               {/* <span className={`s:180`}>An </span>Artist who makes<br className='sm:block hidden' />
             <span className="font">Arts by coding .</span> */}
               {/* <AnimatedText text="Turning Vision Into Reality With Code And Design."  */}
-                      // <AnimatedText text="An Artist who makes Art by coding ." 
+                    {/* // <AnimatedText text="An Artist who makes Art by coding ." 
                       //   className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl' 
-                      // />
+                      // />*/}
               <AnimatedText
                 text="An Artist who makes Art by coding."
                 className="!text-6xl pb-1 !text-left xl:!text-5xl 
