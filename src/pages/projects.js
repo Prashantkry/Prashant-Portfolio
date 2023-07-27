@@ -154,7 +154,7 @@ const Projects = () => {
                         • Admin will have rights to add product, category user also remove it
                         • Book can be added in cart make payment We can see similar Books details
                 `}
-                link="https://github.com/Prashantkry/BookSto"
+                link="https://drab-lime-quail-robe.cyclic.app/"
                 github="https://github.com/Prashantkry/BookSto"
                 type="Feature Project"
               />
