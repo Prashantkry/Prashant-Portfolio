@@ -13,7 +13,7 @@ import Job from '../images/job.png'
 import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
 import Dictionary from '../images/Dictionary.png'
-import Portfolio from '../images/pic1.png'
+import Portfolio from '../images/portf.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
 
 // Feature Components configuration
@@ -159,15 +159,17 @@ const Projects = () => {
                 type="Feature Project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Youtube Clone"
-                img={Youtube}
-                link="https://earnest-gingersnap-22bb82.netlify.app/"
-                github="https://github.com/Prashantkry/youtube"
-                type="Feature Project"
-              />
-            </div>
+
+                  
+            // <div className="col-span-6 sm:col-span-12">
+            //   <SingleProject
+            //     title="Youtube Clone"
+            //     img={Youtube}
+            //     link="https://earnest-gingersnap-22bb82.netlify.app/"
+            //     github="https://github.com/Prashantkry/youtube"
+            //     type="Feature Project"
+            //   />
+            // </div>
 
             
             <div className="col-span-6 sm:col-span-12">
@@ -176,6 +178,17 @@ const Projects = () => {
                 img={compiler}
                 link="https://whimsical-shortbread-959bb4.netlify.app/"
                 github="https://github.com/Prashantkry/Co-Job-Compiler"
+                type="Feature Project"
+              />
+            </div>
+
+            
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Classy Curve"
+                img={classy}
+                link="https://prashantkry.github.io/Classy-Curve/"
+                github="https://github.com/Prashantkry/Classy-Curve"
                 type="Feature Project"
               />
             </div>
@@ -200,16 +213,7 @@ const Projects = () => {
             </div>
 
 
-            
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Classy Curve"
-                img={classy}
-                link="https://prashantkry.github.io/Classy-Curve/"
-                github="https://github.com/Prashantkry/Classy-Curve"
-                type="Feature Project"
-              />
-            </div>
+
 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
@@ -221,15 +225,15 @@ const Projects = () => {
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Job Finder"
-                img={Job}
-                link="https://github.com/Prashantkry/Job-Finder"
-                github="https://github.com/Prashantkry/Job-Finder"
-                type="Feature Project"
-              />
-            </div>
+            // <div className="col-span-6 sm:col-span-12">
+            //   <SingleProject
+            //     title="Job Finder"
+            //     img={Job}
+            //     link="https://github.com/Prashantkry/Job-Finder"
+            //     github="https://github.com/Prashantkry/Job-Finder"
+            //     type="Feature Project"
+            //   />
+            // </div>
 
                   
             <div className="col-span-6 sm:col-span-12">
