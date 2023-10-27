@@ -160,7 +160,7 @@ const Projects = () => {
               />
             </div>
 
-                  
+               /*   
             // <div className="col-span-6 sm:col-span-12">
             //   <SingleProject
             //     title="Youtube Clone"
@@ -170,6 +170,7 @@ const Projects = () => {
             //     type="Feature Project"
             //   />
             // </div>
+            */
 
             
             <div className="col-span-6 sm:col-span-12">
@@ -236,7 +237,7 @@ const Projects = () => {
                 type="Feature Project"
               />
             </div>
-                  
+                  /*
             // <div className="col-span-6 sm:col-span-12">
             //   <SingleProject
             //     title="Job Finder"
@@ -246,7 +247,7 @@ const Projects = () => {
             //     type="Feature Project"
             //   />
             // </div>
-
+*/
 
           </div>
         </Layout>
