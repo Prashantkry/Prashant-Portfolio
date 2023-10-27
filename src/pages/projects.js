@@ -225,6 +225,18 @@ const Projects = () => {
               />
             </div>
 
+
+                                    
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Calculator"
+                img={Cal}
+                link="https://prashantkry.github.io/Calculator-app/"
+                github="https://github.com/Prashantkry/Calculator-app"
+                type="Feature Project"
+              />
+            </div>
+                  
             // <div className="col-span-6 sm:col-span-12">
             //   <SingleProject
             //     title="Job Finder"
@@ -235,16 +247,7 @@ const Projects = () => {
             //   />
             // </div>
 
-                  
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Calculator"
-                img={Cal}
-                link="https://prashantkry.github.io/Calculator-app/"
-                github="https://github.com/Prashantkry/Calculator-app"
-                type="Feature Project"
-              />
-            </div>
+
           </div>
         </Layout>
       </main>
