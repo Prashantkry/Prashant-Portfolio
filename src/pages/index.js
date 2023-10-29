@@ -50,8 +50,9 @@ export default function Home() {
 
                     
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs' >
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                As a skilled Full Stack Web Developer, I am dedicated to turning
+                ideas into innovative web applications. Explore my latest
+                projects and articles, showcasing my expertise in MERN, Svelte, SvelteKit, Next Js, Three Js,GraphQl.
               </p>
               {/* for button */}
               <div className='mt-2 items-center self-start flex lg:self-center'>
