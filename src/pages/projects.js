@@ -14,7 +14,7 @@ import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
 import Dictionary from '../images/Dictionary.png'
 import Portfolio from '../images/portf.png'
-import CodeSnippet from '../images/codeSnippet1.png'
+import CodeSnippet from '../images/codeSnippet2.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
 
 // Feature Components configuration
