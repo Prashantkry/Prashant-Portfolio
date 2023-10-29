@@ -9,6 +9,7 @@ import Skills from '@/components/skills'
 // import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import ParticlesBackground from '@/components/ParticlesBackground'
+import Experience from '@/components/Experience'
 
 // No animation of skills count 
 const AnimatedNos = ({ value }) => {
@@ -98,6 +99,7 @@ const About = () => {
                     {/* skills section  */}
                     <Skills />
                     {/* Experience */}
+                    <Experience/>
                     {/* <Experience/> */}
                     <Education />
                 </Layout>
