@@ -14,6 +14,7 @@ import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
 import Dictionary from '../images/Dictionary.png'
 import Portfolio from '../images/portf.png'
+import codeSnippet from '../images/codeSnippet.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
 
 // Feature Components configuration
@@ -186,10 +187,10 @@ const Projects = () => {
             
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
-                title="Classy Curve"
-                img={classy}
-                link="https://prashantkry.github.io/Classy-Curve/"
-                github="https://github.com/Prashantkry/Classy-Curve"
+                title="codeSnippet"
+                img={codeSnippet}
+                link="https://moonlit-gumdrop-8d8e4c.netlify.app/"
+                github="https://github.com/Prashantkry/Code-Snippet-Creator"
                 type="Feature Project"
               />
             </div>
@@ -215,6 +216,17 @@ const Projects = () => {
 
 
 
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Classy Curve"
+                img={classy}
+                link="https://prashantkry.github.io/Classy-Curve/"
+                github="https://github.com/Prashantkry/Classy-Curve"
+                type="Feature Project"
+              />
+            </div>
+                  
+              
 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
