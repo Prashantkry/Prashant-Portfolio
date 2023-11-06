@@ -232,7 +232,7 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Todo"
-                img={classy}
+                img={todo}
                 link="https://fabulous-pony-dcd3d5.netlify.app/"
                 github="https://github.com/Prashantkry/Todo"
                 type="Feature Project"
