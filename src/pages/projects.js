@@ -14,7 +14,7 @@ import compiler from '../images/compiler.png'
 import Cal from '../images/cal.png'
 import Dictionary from '../images/Dictionary.png'
 import Portfolio from '../images/portf.png'
-import todo from '../images/Screenshot 2023-11-06 203307_1699285032832.png'
+import todo from '../images/todo.png'
 import CodeSnippet from '../images/codeSnippet.png'
 import ParticlesBackground from "@/components/ParticlesBackground";
 
