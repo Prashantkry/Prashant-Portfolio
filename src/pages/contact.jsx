@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import ParticlesBackground from "@/components/ParticlesBackground";
@@ -7,6 +8,9 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   // console.log(name, email, subject, message)
   const sendMail = async () => {
     console.log("api triggered");
@@ -24,17 +28,25 @@ export default function Contact() {
     });
     const receivedData = await sendData.json();
     console.log(receivedData);
-    if (receivedData.message === "Email Sent") {
-      toast.success("Email Sent");
+    if (receivedData.message === "Email Sent ✅") {
+      // toast.success("Email Sent");
+      setSuccessMessage(receivedData.message);
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 1000);
     } else {
-      toast.error("Email Not Sent");
+      // toast.error("Email Not Sent");
+      setErrorMessage(receivedData.message);
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 1000);
     }
   };
   return (
     <>
       <ToastContainer />
       <main>
-        {/* <ParticlesBackground /> */}
+        <ParticlesBackground />
         <div className="bg-gray-50 dark:bg-dark h-[85vh] p-10 -z-50">
           <div className="flex lg:flex-row justify-center items-center h-full mx-4">
             {/* info data start */}
@@ -164,6 +176,17 @@ export default function Contact() {
               >
                 Send
               </button>
+
+              {successMessage && (
+                <p className="text-gray-200 items-start flex justify-start mt-4 bg-green-800 w-fit rounded px-1">
+                  {successMessage}
+                </p>
+              )}
+              {errorMessage && (
+                <p className="text-gray-200 items-start flex justify-start mt-4 bg-red-800 w-fit rounded px-1">
+                  {errorMessage}
+                </p>
+              )}
             </div>
             {/* send message form end */}
           </div>

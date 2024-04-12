@@ -47,12 +47,12 @@ const sendMail = async (req, res) => {
     console.log(insertData, "Email sent and data inserted into database");
   } catch (error) {
     console.error("Error sending email or inserting data:", error);
-    return NextResponse.error(new Error("Failed to send email"), {
+    return NextResponse.error(new Error("Failed to send email fixing bug"), {
       status: 500,
     });
   }
 
-  return res.json({ message: "Email Sent" });
+  return res.json({ message: "Email Sent ✅" });
 };
 
 export default sendMail;
