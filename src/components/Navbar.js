@@ -12,7 +12,6 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
     <Link href={href} className={`${className} relative group`}>
-      {" "}
       {/*group is used to make hover active or inactive in navbar by following span group */}
       {title}
       <span
@@ -44,7 +43,6 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={HandleClick}
     >
-      {" "}
       {/*group is used to make hover active or inactive in navbar by following span group */}
       {title}
       <span
@@ -77,6 +75,7 @@ const Navbar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
+          <CustomLink href="/contact" title="Contact" className="mx-4" />
           {/* <CustomLink href="/contact" title="Contact" className='ml-4' /> */}
         </nav>
 
@@ -173,6 +172,12 @@ const Navbar = () => {
             <CustomMobileLink
               href="/projects"
               title="Projects"
+              className=""
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              href="/contact"
+              title="Contact"
               className=""
               toggle={handleClick}
             />
