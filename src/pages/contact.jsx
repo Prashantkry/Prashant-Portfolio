@@ -55,7 +55,7 @@ export default function Contact() {
                 Get in touch
               </h1>
               <div className="text-base p-5 leading-1 text-gray-900 dark:text-gray-200 w-full">
-                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2">
+                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2 sm:-ml-10">
                   <div className="flex items-start justify-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -69,12 +69,11 @@ export default function Contact() {
                     <p className="text-lg font-bold mx-2">Email </p>
                   </div>
                   <p className="tracking-wide lg:ml-[9vw] md:ml-[9vw] sm:ml-[3vw] mt-3">
-                    {" "}
                     Prashantkry746@gmail.com
                   </p>
                 </div>
 
-                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2">
+                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2 sm:-ml-10">
                   <div className="flex items-start justify-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -88,12 +87,11 @@ export default function Contact() {
                     <p className="text-lg font-bold mx-2 ">Phone No </p>
                   </div>
                   <p className="tracking-wide lg:ml-[9vw] md:ml-[9vw] sm:ml-[3vw] mt-3 ">
-                    {" "}
                     7991132070
                   </p>
                 </div>
 
-                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2">
+                <div className="flex sm:flex-col md:flex-col lg:flex-col border-0 justify-start items-start w-full my-4 p-2 sm:-ml-10">
                   <div className="flex items-start justify-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +105,6 @@ export default function Contact() {
                     <p className="text-lg font-bold mx-2 ">Address </p>
                   </div>
                   <p className="tracking-wide lg:ml-[9vw] md:ml-[9vw] sm:ml-[3vw] mt-3">
-                    {" "}
                     Karnatka Banglore
                   </p>
                 </div>
