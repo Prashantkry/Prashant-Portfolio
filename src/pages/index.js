@@ -41,7 +41,8 @@ export default function Home() {
                       //   className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl' 
                       // />*/}
               <AnimatedText
-                text="Passionate About Work"
+                text="An Artist who makes Art by coding."
+                // text="Passionate About Work"
                 className="!text-6xl pb-1 !text-left xl:!text-5xl 
                   lg:!text-center lg:!text-6xl md:!text-5xl 
                   sm:!text-3xl text-transparent animated_text
