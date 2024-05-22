@@ -8,15 +8,17 @@ import React from "react";
 import project1 from "../images/prashant.jpg";
 import classy from "../images/classy-curve.png";
 import BookSto from "../images/booksto.png";
-import Youtube from '../images/youtube.png'
-import Job from '../images/job.png'
-import compiler from '../images/compiler.png'
-import Cal from '../images/cal.png'
-import Dictionary from '../images/Dictionary.png'
-import Portfolio from '../images/portf.png'
-import todo from '../images/todo.png'
-import CodeSnippet from '../images/codeSnippet.png'
+import Youtube from "../images/youtube.png";
+import Job from "../images/job.png";
+import compiler from "../images/compiler.png";
+import Cal from "../images/cal.png";
+import Dictionary from "../images/Dictionary.png";
+import Portfolio from "../images/portf.png";
+import todo from "../images/todo.png";
+import CodeSnippet from "../images/codeSnippet.png";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import vrika from "../images/vrika.png";
+import fashion from "../images/fashion.png";
 
 // Feature Components configuration
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
@@ -136,8 +138,8 @@ const Projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="flex flex-col items-center justify-center w-full mb-16 ">
-      <Layout className="pt-16">
-        <ParticlesBackground/>
+        <Layout className="pt-16">
+          <ParticlesBackground />
           <AnimatedText
             text="Imagination Trumps Knowledge!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
@@ -145,24 +147,24 @@ const Projects = () => {
           {/* projects contents  */}
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             {/* row 1 */}
-            <div className="col-span-12 ">
+            <div className="col-span-12 text-xs">
               <FeatureProject
-                title="BookSto"
-                img={BookSto}
+                title="Vrika AI"
+                img={vrika}
                 summary={`
-                        • Technology Used: React Js |Node Js |Mongo Db |Javascript | CSS |HTML 
-                        • People can buy book by searching directly or by browsing by category
-                        • Two ways of sign in 1 by admin and other by user by crating account
-                        • Admin will have rights to add product, category user also remove it
-                        • Book can be added in cart make payment We can see similar Books details
+                        • Technology Used: React Js | Node Js | Mongo Db | Javascript | Typescript | CSS | HTML | Tailwind CSS | Python
+                        • Integrated advanced AI technologies, like StableDiffusionPipeline and AutoPipelineForImage2Image, revolutionizing image generation from text, 
+                        • Executed sophisticated optimization techniques - DPMSolverMultistepScheduler and StableDiffusionImg2ImgPipeline to ensure exceptional outcomes.
+                        • MERN website featuring CRUD operations, MVC architecture, JWT token-based authentication, utilizing cookies for session management, hashing passwords, email system, stripe payment gateway integrated based on credits-based usage, stripe Webhook, and Google login authentication.
+                        • Image generation dashboard includes functions such as importing or choosing images, downloading,replicating, showing information of generated images and its tools, and displaying the tokens left for generations and generated image in viewport and User Dashboard for management of details, payment methods, and projects.
                 `}
-                link="https://drab-lime-quail-robe.cyclic.app/"
-                github="https://github.com/Prashantkry/BookSto"
+                link="https://vrikaai.netlify.app/"
+                github="https://github.com/Prashantkry/Vrika-AI"
                 type="Feature Project"
               />
             </div>
 
-{/*   
+            {/*   
             // <div className="col-span-6 sm:col-span-12">
             //   <SingleProject
             //     title="Youtube Clone"
@@ -174,7 +176,6 @@ const Projects = () => {
             // </div>
             */}
 
-            
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Co-Job Compiler"
@@ -185,38 +186,6 @@ const Projects = () => {
               />
             </div>
 
-            
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="CodeSnippet"
-                img={CodeSnippet}
-                link="https://moonlit-gumdrop-8d8e4c.netlify.app/"
-                github="https://github.com/Prashantkry/Code-Snippet-Creator"
-                type="Feature Project"
-              />
-            </div>
-
-
-            {/* row 2 */}
-            <div className="col-span-12 ">
-              <FeatureProject
-                title="Prashant Portfolio"
-                img={Portfolio}
-                summary={`
-                        • Technology Used: Next Js | Framer Motion |Javascript | Tailwind CSS | HTML 
-                        • It have option like Home Page About Page and Project
-                        • Code is written in Next Js & Functioning are made using JavaScript
-                        • Designing is done with Tailwind CSS
-                        • Contains All details of Prashant Kumar and All projects 
-                `}
-                link="https://github.com/Prashantkry/Prashant-Portfolio"
-                github="https://github.com/Prashantkry/Prashant-Portfolio"
-                type="Feature Project"
-              />
-            </div>
-
-
-
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Classy Curve"
@@ -226,9 +195,35 @@ const Projects = () => {
                 type="Feature Project"
               />
             </div>
-                  
 
+            {/* <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="CodeSnippet"
+                img={CodeSnippet}
+                link="https://moonlit-gumdrop-8d8e4c.netlify.app/"
+                github="https://github.com/Prashantkry/Code-Snippet-Creator"
+                type="Feature Project"
+              />
+            </div> */}
 
+            {/* row 2 */}
+            <div className="col-span-12 text-sm">
+              <FeatureProject
+                title="Fashion Frenzy"
+                img={fashion}
+                summary={`
+                        • Technology Used: Node, Mongo, Express, React, JavaScript, HTML, CSS, Tailwind
+                        • Developed a MERN website showcasing comprehensive functionality including CRUD operations, MVC architecture, JWT authentication, middleware integration, and password hashing
+                        • Created dual authentication for admins and users, granting admins exclusive management privileges.
+                        • Integrated advanced functionalities like a payment gateway, cart system, Admin Dashboard, and responsive design while prioritizing secure user authentication and data protection through robust password hashing techniques to safeguard sensitive information and enhance overall platform security.
+                `}
+                link="https://glittery-shortbread-a8b75e.netlify.app/"
+                github="https://github.com/Prashantkry/fashion-frenzy"
+                type="Feature Project"
+              />
+            </div>
+
+{/* 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Todo"
@@ -237,9 +232,8 @@ const Projects = () => {
                 github="https://github.com/Prashantkry/Todo"
                 type="Feature Project"
               />
-            </div>
-                  
-              
+            </div> */}
+
 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
@@ -251,8 +245,6 @@ const Projects = () => {
               />
             </div>
 
-
-                                    
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Calculator"
@@ -262,7 +254,45 @@ const Projects = () => {
                 type="Feature Project"
               />
             </div>
-{/*
+
+            
+            {/* row 2 */}
+            <div className="col-span-12 text-sm">
+              <FeatureProject
+                title="Prashant Portfolio"
+                img={Portfolio}
+                summary={`
+                        • Technology Used: Next Js | Mongo Db | Node Js | Git | Node-Mailer | Framer Motion | Javascript | Tailwind CSS | HTML 
+                        • It have option like Home Page About Page Project and Contact
+                        • Backend is also implemented for Contact page for sending message through email and saving data in mongo db 
+                        • Code is written in Next Js & Functioning are made using JavaScript
+                        • Designing is done with Tailwind CSS
+                        • Contains All details of Prashant Kumar and All projects 
+                `}
+                link="https://github.com/Prashantkry/Prashant-Portfolio"
+                github="https://github.com/Prashantkry/Prashant-Portfolio"
+                type="Feature Project"
+              />
+            </div>
+
+            <div className="col-span-12 text-sm">
+              <FeatureProject
+                title="BookSto"
+                img={BookSto}
+                summary={`
+                        • Technology Used: React Js | Node Js | Mongo Db | Javascript | CSS | HTML 
+                        • People can buy book by searching directly or by browsing by category
+                        • Two ways of sign in 1 by admin and other by user by crating account
+                        • Admin will have rights to add product, category user also remove it
+                        • Book can be added in cart make payment We can see similar Books details
+                `}
+                link="https://drab-lime-quail-robe.cyclic.app/"
+                github="https://github.com/Prashantkry/BookSto"
+                type="Feature Project"
+              />
+            </div>
+
+            {/*
             // <div className="col-span-6 sm:col-span-12">
             //   <SingleProject
             //     title="Job Finder"
@@ -273,7 +303,6 @@ const Projects = () => {
             //   />
             // </div>
 */}
-
           </div>
         </Layout>
       </main>
