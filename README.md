@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-Deployed Link -  https://resonant-starburst-53f928.netlify.app/
+Deployed Link -  https://prashant-kr-portfolio.netlify.app/
 
 ```
 • Technology Used: Next Js | Framer Motion |Javascript | Tailwind CSS | HTML
