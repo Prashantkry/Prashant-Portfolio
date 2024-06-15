@@ -19,6 +19,9 @@ import CodeSnippet from "../images/codeSnippet.png";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import vrika from "../images/vrika.png";
 import fashion from "../images/fashion.png";
+import dashboard from "../images/dashboard.png";
+import dice from "../images/dice.png";
+import task from "../images/task.png";
 
 // Feature Components configuration
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
@@ -81,7 +84,7 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
 };
 
 // Single Project Components configuration
-const SingleProject = ({ title, type, img, link, github }) => {
+const SingleProject = ({ title, type, img, link, github, summary }) => {
   return (
     <article className="relative flex flex-col items-center justify-center w-full p-6 border border-solid shadow-2xl rounded-2xl border-dark bg-light dark:bg-dark dark:border-light dark:text-light xs:p-4">
       <Link
@@ -124,6 +127,11 @@ const SingleProject = ({ title, type, img, link, github }) => {
           <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
+        </div>
+        <div className="flex items-center justify-between w-full mt-2">
+          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm whitespace-pre-line text-xs">
+            {summary}
+          </p>
         </div>
       </div>
     </article>
@@ -176,7 +184,7 @@ const Projects = () => {
             // </div>
             */}
 
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Co-Job Compiler"
                 img={compiler}
@@ -184,15 +192,35 @@ const Projects = () => {
                 github="https://github.com/Prashantkry/Co-Job-Compiler"
                 type="Feature Project"
               />
-            </div>
+            </div> */}
 
+            {/* Ludo */}
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
-                title="Classy Curve"
-                img={classy}
-                link="https://prashantkry.github.io/Classy-Curve/"
-                github="https://github.com/Prashantkry/Classy-Curve"
+                title="Dice Game"
+                img={dice}
+                link="https://dice-game-alpha-virid.vercel.app/"
+                github="https://github.com/Prashantkry/dice-game"
                 type="Feature Project"
+                summary={`• Technology Used: MERN, Typescript, Javascript, Tailwind CSS, MUI, HTML/CSS.
+                          • UI is created in React MUI and tools used like react router, redux, axios, cookies
+                          • Backend in Node, Mongo Db, Express, Typescript REST API, MVC, JWT token, Cookie, winston, password hashing and login authentication implemented.
+                `}
+              />
+            </div>
+
+            {/* portfolio */}
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Prashant Portfolio"
+                img={Portfolio}
+                link="https://github.com/Prashantkry/Prashant-Portfolio"
+                github="https://github.com/Prashantkry/Prashant-Portfolio"
+                type="Feature Project"
+                summary={`• Technology Used: Next Js | MongoDb | Node | Javascript | Tailwind CSS | HTML
+                          • UI is written in Next Js, Tailwind CSS, Framer Motion and JavaScript
+                          • Backend is implemented for Contact page for sending message through email using  Node-Mailer and saving data in mongo db.
+                `}
               />
             </div>
 
@@ -209,21 +237,22 @@ const Projects = () => {
             {/* row 2 */}
             <div className="col-span-12 text-sm">
               <FeatureProject
-                title="Fashion Frenzy"
-                img={fashion}
+                title="Task Manager"
+                img={task}
                 summary={`
-                        • Technology Used: Node, Mongo, Express, React, JavaScript, HTML, CSS, Tailwind
-                        • Developed a MERN website showcasing comprehensive functionality including CRUD operations, MVC architecture, JWT authentication, middleware integration, and password hashing
-                        • Created dual authentication for admins and users, granting admins exclusive management privileges.
-                        • Integrated advanced functionalities like a payment gateway, cart system, Admin Dashboard, and responsive design while prioritizing secure user authentication and data protection through robust password hashing techniques to safeguard sensitive information and enhance overall platform security.
+                        • Technology Used: MERN, Typescript, JavaScript, HTML, CSS, Tailwind
+                        • Frontend concept like state management using redux and react hook.
+                        • React Router for navigation b/w tabs and responsive across all device
+                        • Backend includes CRUD operations, Typescript REST API, MVC architecture, JWT authentication, middleware integration.
+                        • User can create update and delete task. Login auth is implemented.
                 `}
-                link="https://glittery-shortbread-a8b75e.netlify.app/"
-                github="https://github.com/Prashantkry/fashion-frenzy"
+                link="https://pedalstart-assignment.netlify.app/"
+                github="https://github.com/Prashantkry/pedalstart"
                 type="Feature Project"
               />
             </div>
 
-{/* 
+            {/* 
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Todo"
@@ -235,6 +264,22 @@ const Projects = () => {
             </div> */}
 
 
+            {/* dashboard */}
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Dashboard"
+                img={dashboard}
+                link="https://dashboard-prashantkry.netlify.app/"
+                github="https://github.com/Prashantkry/dashboard"
+                type="Feature Project"
+                summary={`• Technology Used: Next Js | Typescript | Javascript | CSS | HTML | Tailwind CSS
+                          • Dashboard made tracking of all shipments and their details and upcoming events used here react Pie chart and animations 
+                          • React Router for navigation and React-Typescript used for components.
+                `}
+              />
+            </div>
+
+            {/* Dictionary */}
             <div className="col-span-6 sm:col-span-12">
               <SingleProject
                 title="Dictionary"
@@ -242,22 +287,18 @@ const Projects = () => {
                 link="https://darling-profiterole-d4a387.netlify.app/"
                 github="https://github.com/Prashantkry/Dictionary"
                 type="Feature Project"
+                summary={`• Technology Used: React Js | Javascript | CSS | HTML
+                          • Dictionary app that can be used to search meanings of words.
+                          • Voice integrations is there and used to hear what is meaning of words.
+                          • Voice can be played if multiple language like hindi francais e.t.c.
+                `}
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
-              <SingleProject
-                title="Calculator"
-                img={Cal}
-                link="https://prashantkry.github.io/Calculator-app/"
-                github="https://github.com/Prashantkry/Calculator-app"
-                type="Feature Project"
-              />
-            </div>
 
-            
-            {/* row 2 */}
-            <div className="col-span-12 text-sm">
+
+            {/* Portfolio */}            {/* row 2 */}
+            {/* <div className="col-span-12 text-sm">
               <FeatureProject
                 title="Prashant Portfolio"
                 img={Portfolio}
@@ -273,9 +314,58 @@ const Projects = () => {
                 github="https://github.com/Prashantkry/Prashant-Portfolio"
                 type="Feature Project"
               />
+            </div> */}
+
+
+            {/* row 3 */}
+            <div className="col-span-12 text-sm">
+              <FeatureProject
+                title="Fashion Frenzy"
+                img={fashion}
+                summary={`
+                        • Technology Used: Node, Mongo, Express, React, JavaScript, HTML, CSS, Tailwind
+                        • Developed a MERN website showcasing comprehensive functionality including CRUD operations, MVC architecture, JWT authentication, middleware integration, and password hashing
+                        • Created dual authentication for admins and users, granting admins exclusive management privileges.
+                        • Integrated advanced functionalities like a payment gateway, cart system, Admin Dashboard, and responsive design while prioritizing secure user authentication and data protection through robust password hashing techniques to safeguard sensitive information and enhance overall platform security.
+                `}
+                link="https://glittery-shortbread-a8b75e.netlify.app/"
+                github="https://github.com/Prashantkry/fashion-frenzy"
+                type="Feature Project"
+              />
             </div>
 
-            <div className="col-span-12 text-sm">
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Classy Curve"
+                img={classy}
+                link="https://prashantkry.github.io/Classy-Curve/"
+                github="https://github.com/Prashantkry/Classy-Curve"
+                type="Feature Project"
+                summary={`• Technology Used: Javascript | CSS | HTML
+                          • E-Commerce web app UI made in html and css and functionality in Js
+                          • View 1 item, seamless navigation between tabs, Carts system and pagination.
+                          • Gallery system for view of product.
+                `}
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <SingleProject
+                title="Calculator"
+                img={Cal}
+                link="https://prashantkry.github.io/Calculator-app/"
+                github="https://github.com/Prashantkry/Calculator-app"
+                type="Feature Project"
+                summary={`• Technology Used: Javascript | CSS | HTML
+                          • Calculator web app UI made in html and css and functionality in Js
+                          • User can do here all math calculation like sum subtraction product division .
+                          • Isomorphic UI is made here which really gives it a unique look.
+                `}
+              />
+            </div>
+
+            {/* row 4 */}
+            {/* <div className="col-span-12 text-sm">
               <FeatureProject
                 title="BookSto"
                 img={BookSto}
@@ -290,7 +380,7 @@ const Projects = () => {
                 github="https://github.com/Prashantkry/BookSto"
                 type="Feature Project"
               />
-            </div>
+            </div> */}
 
             {/*
             // <div className="col-span-6 sm:col-span-12">
