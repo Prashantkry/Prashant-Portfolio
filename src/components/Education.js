@@ -59,13 +59,6 @@ const Education = () => {
             place='Shivam International School'
             info="Courses I learnt are: Math , Physics, Chemistry,English , Painting"
           />
-          <Details
-            type='High School'
-            time='2016' 
-            place='Shivam International School'
-            info="Courses I learnt are: Math,Science,English,Social Science,GK,..."
-          />
-
           
         </ul>
       </div>
