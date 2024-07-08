@@ -66,7 +66,7 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
           {summary}
         </p>
 
-        <div className="flex items-center mt-2">
+        <div className="flex items-center mt-2"> 
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
