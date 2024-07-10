@@ -74,25 +74,46 @@ const Experience = () => {
             // functionalities.
             // • Worked on AutoCAD (computer-aided design) for architectural maintenance.`}
             work={
+              // <div>
+              //   • Amplified technical expertise in MERN, Svelte, Electron, Three
+              //   Js, Graph QL through immersive hands-on experience.
+              //   <br />
+              //   • As a full stack web developer, maintained and structured
+              //   website and 3D graphics functionalities.
+              //   <br />• Worked on AutoCAD (computer-aided design) for
+              //   architectural maintenance.
+              // </div>
+
+
+
               <div>
-                • Amplified technical expertise in MERN, Svelte, Electron, Three
-                Js, Graph QL through immersive hands-on experience.
+                • Developed Generative AI platform, leveraging stable diffusion techniques to create diverse content.
                 <br />
-                • As a full stack web developer, maintained and structured
-                website and 3D graphics functionalities.
-                <br />• Worked on AutoCAD (computer-aided design) for
-                architectural maintenance.
+                • Focused on generating high-quality images from 3D models and text, ensuring stability and excellence in every output.
+                <br />
+                • Architected and maintained website with Full Stack and integrated 3D model loading loader using ThreeJs.
+                <br />
+                • Worked on the InPaint system of Gen AI
+                <br />
+                • REST API,Stripe,MongoDB,Cloudflare integration enhanced application functionality and security by 70%
               </div>
             }
           />
-          {/* <Details
-            position='Software Engineer' company='@Google'
-            companyLink={'www.google.com'}
-            time='2022-Present' address='Mountain View, CA'
-            work="Worked on a team responsible for developing new features for Google's 
-                  search engine, including improving the accuracy and relevance of search results and 
-                  developing new tools for data analysis and visualization."
-          /> */}
+          <Details
+            position='Frontend Developer' company='@Ethical Learner'
+            companyLink={'https://www.linkedin.com/company/ethical-learner/'}
+            time='2024 April-June' address='Remote'
+            work={
+              <div>
+                • Architected user interfaces with React Js, integrating Redux, transitioning tools like props, React Router,
+                Webpack and Babel, Jest enhancing user experience and usability by 90%.
+                <br />
+                • Collaborated closely with clients for requirements gathering, regular updates, and iterative feedback incorporation, demonstrating strong project management and communication skills increased productivity by 30%
+                <br />
+              </div>
+            }
+          />
+
           {/* <Details
             position='Software Engineer' company='@Google'
             companyLink={'www.google.com'}
